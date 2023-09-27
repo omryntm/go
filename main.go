@@ -1,8 +1,9 @@
 package main
 
-import (
-	"golesson/loops"
-)
+//import "golesson/loops"
+//import "golesson/arrays"
+
+import "golesson/functions"
 
 // camelCase
 // PascalCase
@@ -12,9 +13,7 @@ func main() {
 	//conditionals.Demo3()
 	//loops.Demo1()
 	//loops.Demo2()
-	//loops.Demo4()
-	//loops.Demo4()
-	//loops.Demo5()
-	loops.Demo6()
-
+	//arrays.Demo4()
+	//slices.Demo2()
+	functions.SelamVer()
 }
