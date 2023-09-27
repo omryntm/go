@@ -12,6 +12,9 @@ func main() {
 	//conditionals.Demo3()
 	//loops.Demo1()
 	//loops.Demo2()
-	loops.Demo5()
+	//loops.Demo4()
+	//loops.Demo4()
+	//loops.Demo5()
+	loops.Demo6()
 
 }
