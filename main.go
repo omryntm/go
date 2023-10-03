@@ -3,7 +3,10 @@ package main
 //import "golesson/loops"
 //import "golesson/arrays"
 
-import "golesson/functions"
+import (
+	"fmt"
+	"golesson/functions"
+)
 
 // camelCase
 // PascalCase
@@ -15,5 +18,20 @@ func main() {
 	//loops.Demo2()
 	//arrays.Demo4()
 	//slices.Demo2()
-	functions.SelamVer()
+	//functions.SelamVer()
+	//functions.Topla(2, 6)
+	//var sonuc = functions.Topla(2, 6)
+	//fmt.Println(sonuc)
+	//sonuc1, sonuc2, sonuc3, sonuc4 := functions.DortIslem(10, 6) // sonuc 4 için hesaplama yapmak istemezsen _ çizgi koymak gerekiyor
+	//fmt.Println("Toplam: ", sonuc1)
+	//fmt.Println("Fark: ", sonuc2)
+	//fmt.Println("Çarpım: ", sonuc3)
+	//fmt.Println("Bölüm: ", sonuc4)
+	//var sonuc = functions.ToplaVariadic(1, 4, 6, 3, 10)
+	fmt.Println(functions.ToplaVariadic(1, 4, 6, 3, 10))
+	fmt.Println(functions.ToplaVariadic(1, 4))
+	fmt.Println(functions.ToplaVariadic())
+	sayilar := []int{4, 6, 7, 0, 11}
+	fmt.Println(functions.ToplaVariadic(sayilar...))
+
 }
