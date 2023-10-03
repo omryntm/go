@@ -1,12 +1,12 @@
 package main
 
-//import "golesson/loops"
-//import "golesson/arrays"
-
 import (
 	"fmt"
-	"golesson/functions"
+	"golesson/pointers"
 )
+
+//import "golesson/loops"
+//import "golesson/arrays"
 
 // camelCase
 // PascalCase
@@ -28,10 +28,20 @@ func main() {
 	//fmt.Println("Çarpım: ", sonuc3)
 	//fmt.Println("Bölüm: ", sonuc4)
 	//var sonuc = functions.ToplaVariadic(1, 4, 6, 3, 10)
-	fmt.Println(functions.ToplaVariadic(1, 4, 6, 3, 10))
-	fmt.Println(functions.ToplaVariadic(1, 4))
-	fmt.Println(functions.ToplaVariadic())
-	sayilar := []int{4, 6, 7, 0, 11}
-	fmt.Println(functions.ToplaVariadic(sayilar...))
+	//fmt.Println(functions.ToplaVariadic(1, 4, 6, 3, 10))
+	//fmt.Println(functions.ToplaVariadic(1, 4))
+	//fmt.Println(functions.ToplaVariadic())
+	//sayilar := []int{4, 6, 7, 0, 11}
+	//fmt.Println(functions.ToplaVariadic(sayilar...))
+	//maps.Demo1()
+	//for_range.Demo1()
+	//for_range.Demo3()
+	//sayi := 20
+	//pointers.Demo1(&sayi)
+	//fmt.Println("Maindeki sayı: ", sayi)
+	//pointers.Demo2(sayilar)
+	sayilar := []int{1, 2, 3}
+	pointers.Demo2(sayilar)
+	fmt.Println("Maindeki sayı: ", sayilar[0])
 
 }
