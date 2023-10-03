@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"golesson/pointers"
+	"golesson/goroutines"
+	"time"
 )
 
 //import "golesson/loops"
@@ -40,8 +41,12 @@ func main() {
 	//pointers.Demo1(&sayi)
 	//fmt.Println("Maindeki sayı: ", sayi)
 	//pointers.Demo2(sayilar)
-	sayilar := []int{1, 2, 3}
-	pointers.Demo2(sayilar)
-	fmt.Println("Maindeki sayı: ", sayilar[0])
-
+	//sayilar := []int{1, 2, 3}
+	//pointers.Demo2(sayilar)
+	//fmt.Println("Maindeki sayı: ", sayilar[0])
+	//structs.Demo2()
+	go goroutines.CiftSayilar()
+	go goroutines.TekSayilar()
+	time.Sleep(time.Second)
+	fmt.Println("main func bitti")
 }
