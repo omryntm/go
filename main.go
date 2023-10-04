@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"golesson/goroutines"
-	"time"
+	"golesson/interfaces"
 )
 
 //import "golesson/loops"
@@ -45,8 +43,20 @@ func main() {
 	//pointers.Demo2(sayilar)
 	//fmt.Println("Maindeki sayı: ", sayilar[0])
 	//structs.Demo2()
-	go goroutines.CiftSayilar()
-	go goroutines.TekSayilar()
-	time.Sleep(time.Second)
-	fmt.Println("main func bitti")
+
+	//channels
+	//ciftSayiCn := make(chan int)
+	//tekSayiCn := make(chan int)
+	//go channels.CiftSayilar(ciftSayiCn)
+	//go channels.TekSayilar(tekSayiCn)
+	//ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
+	//carpim := ciftSayiToplam * tekSayiToplam
+	//fmt.Println("Çarpım : ", carpim)
+	//channels.Demo1()
+
+	//interfaces
+
+	//interfaces.Demo1()
+	interfaces.Demo2()
+
 }
